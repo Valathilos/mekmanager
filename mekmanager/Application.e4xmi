@@ -3,17 +3,20 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_XiMQIASAEeaO_uLzYIeDqQ" elementId="mekmanager.trimmedwindow.main" label="Mek Manager" x="100" y="100" width="600" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_2AFV8ASAEeaO_uLzYIeDqQ" elementId="mekmanager.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_4nmx0ASAEeaO_uLzYIeDqQ" elementId="mekmanager.perspective.main" label="Main">
-        <children xsi:type="basic:PartSashContainer" xmi:id="__rKUIASAEeaO_uLzYIeDqQ" elementId="mekmanager.partsashcontainer.main" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="__rKUIASAEeaO_uLzYIeDqQ" elementId="mekmanager.partsashcontainer.main">
           <children xsi:type="basic:PartStack" xmi:id="_D4DyYASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.0">
             <children xsi:type="basic:Part" xmi:id="_Lh1nMASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.overview" contributionURI="bundleclass://mekmanager/mekmanager.parts.OverviewPart" label="Overview"/>
+            <children xsi:type="basic:Part" xmi:id="_vtg0kASUEea9j7k58IJA0A" elementId="mekmanager.part.finances" contributionURI="bundleclass://mekmanager/mekmanager.parts.FinancesPart" label="Finances"/>
+            <children xsi:type="basic:Part" xmi:id="_gwEIYASVEea9j7k58IJA0A" elementId="mekmanager.part.equipment" contributionURI="bundleclass://mekmanager/mekmanager.parts.EquipmentPart" label="Equipment"/>
+            <children xsi:type="basic:Part" xmi:id="_wxtAAASVEea9j7k58IJA0A" elementId="mekmanager.part.infrastructure" label="Infrastructure"/>
           </children>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_GSt28ASBEeaO_uLzYIeDqQ" elementId="mekmanager.partsashcontainer.0">
-            <children xsi:type="basic:PartStack" xmi:id="_IWAkYASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.1">
-              <children xsi:type="basic:Part" xmi:id="_OqNGUASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.details" contributionURI="bundleclass://mekmanager/mekmanager.parts.DetailsPart" label="Details"/>
-            </children>
-            <children xsi:type="basic:PartStack" xmi:id="_I5OmMASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.2">
-              <children xsi:type="basic:Part" xmi:id="_QocUoASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.playground" contributionURI="bundleclass://mekmanager/mekmanager.parts.PlaygroundPart" label="Playground"/>
-            </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_GSt28ASBEeaO_uLzYIeDqQ" elementId="mekmanager.partsashcontainer.0">
+          <children xsi:type="basic:PartStack" xmi:id="_IWAkYASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.1">
+            <children xsi:type="basic:Part" xmi:id="_OqNGUASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.details" contributionURI="bundleclass://mekmanager/mekmanager.parts.DetailsPart" label="Details"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_I5OmMASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.2">
+            <children xsi:type="basic:Part" xmi:id="_QocUoASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.playground" contributionURI="bundleclass://mekmanager/mekmanager.parts.PlaygroundPart" label="Playground"/>
           </children>
         </children>
       </children>
