@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_Tpuw0ASAEeaO_uLzYIeDqQ" elementId="mekmanager.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_XiMQIASAEeaO_uLzYIeDqQ" elementId="mekmanager.trimmedwindow.main" label="Mek Manager" x="100" y="100" width="600" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_2AFV8ASAEeaO_uLzYIeDqQ" elementId="mekmanager.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_4nmx0ASAEeaO_uLzYIeDqQ" elementId="mekmanager.perspective.main" label="Main">
+        <children xsi:type="basic:PartSashContainer" xmi:id="__rKUIASAEeaO_uLzYIeDqQ" elementId="mekmanager.partsashcontainer.main" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_D4DyYASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_Lh1nMASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.overview" contributionURI="bundleclass://mekmanager/mekmanager.parts.OverviewPart" label="Overview"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_GSt28ASBEeaO_uLzYIeDqQ" elementId="mekmanager.partsashcontainer.0">
+            <children xsi:type="basic:PartStack" xmi:id="_IWAkYASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.1">
+              <children xsi:type="basic:Part" xmi:id="_OqNGUASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.details" contributionURI="bundleclass://mekmanager/mekmanager.parts.DetailsPart" label="Details"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_I5OmMASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.2">
+              <children xsi:type="basic:Part" xmi:id="_QocUoASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.playground" contributionURI="bundleclass://mekmanager/mekmanager.parts.PlaygroundPart" label="Playground"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+  </children>
+  <addons xmi:id="_Tpuw0QSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_Tpuw0gSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_Tpuw0wSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_Tpuw1ASAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_Tpuw1QSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_Tpuw1gSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_Tpuw1wSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>
