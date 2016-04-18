@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_Tpuw0ASAEeaO_uLzYIeDqQ" elementId="mekmanager.application">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Tpuw0ASAEeaO_uLzYIeDqQ" elementId="mekmanager.application">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_XiMQIASAEeaO_uLzYIeDqQ" elementId="mekmanager.trimmedwindow.main" label="Mek Manager" x="100" y="100" width="600" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_2AFV8ASAEeaO_uLzYIeDqQ" elementId="mekmanager.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_4nmx0ASAEeaO_uLzYIeDqQ" elementId="mekmanager.perspective.main" label="Main">
         <children xsi:type="basic:PartSashContainer" xmi:id="__rKUIASAEeaO_uLzYIeDqQ" elementId="mekmanager.partsashcontainer.main">
           <children xsi:type="basic:PartStack" xmi:id="_D4DyYASBEeaO_uLzYIeDqQ" elementId="mekmanager.partstack.0">
-            <children xsi:type="basic:Part" xmi:id="_Lh1nMASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.overview" contributionURI="bundleclass://mekmanager/mekmanager.parts.OverviewPart" label="Overview"/>
+            <children xsi:type="basic:Part" xmi:id="_Lh1nMASBEeaO_uLzYIeDqQ" elementId="mekmanager.part.overview" contributionURI="bundleclass://mekmanager/mekmanager.parts.OverviewPart" label="Overview">
+              <toolbar xmi:id="_ULrocAVeEeamGKXPsQhGug" elementId="mekmanager.toolbar.1"/>
+            </children>
             <children xsi:type="basic:Part" xmi:id="_vtg0kASUEea9j7k58IJA0A" elementId="mekmanager.part.finances" contributionURI="bundleclass://mekmanager/mekmanager.parts.FinancesPart" label="Finances"/>
             <children xsi:type="basic:Part" xmi:id="_gwEIYASVEea9j7k58IJA0A" elementId="mekmanager.part.equipment" contributionURI="bundleclass://mekmanager/mekmanager.parts.EquipmentPart" label="Equipment"/>
             <children xsi:type="basic:Part" xmi:id="_wxtAAASVEea9j7k58IJA0A" elementId="mekmanager.part.infrastructure" label="Infrastructure"/>
@@ -21,7 +23,29 @@
         </children>
       </children>
     </children>
+    <mainMenu xmi:id="_2TrTYAVcEeamGKXPsQhGug" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_CMulAAVdEeamGKXPsQhGug" elementId="mekmanager.menu.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_HZtnQAVdEeamGKXPsQhGug" elementId="mekmanager.handledmenuitem.save" label="Save" command="_5Eu7MAVbEeamGKXPsQhGug"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_QnygYAVdEeamGKXPsQhGug" elementId="mekmanager.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_RT8bwAVdEeamGKXPsQhGug" elementId="mekmanager.handledmenuitem.exit" label="Exit" command="_rDsCUAVbEeamGKXPsQhGug"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_EHwuUAVdEeamGKXPsQhGug" elementId="mekmanager.menu.edit" label="Edit">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_VIcoIAVdEeamGKXPsQhGug" elementId="mekmanager.handledmenuitem.test" label="Test" command="_xIQz4AVbEeamGKXPsQhGug"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_qTaKAAVdEeamGKXPsQhGug" elementId="mekmanager.trimbar.top">
+      <children xsi:type="menu:ToolBar" xmi:id="_wIhjQAVdEeamGKXPsQhGug" elementId="mekmanager.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zNyEAAVdEeamGKXPsQhGug" elementId="mekmanager.handledtoolitem.save" label="Save" command="_5Eu7MAVbEeamGKXPsQhGug"/>
+        <children xsi:type="menu:ToolControl" xmi:id="_52DjEAVeEeamGKXPsQhGug" elementId="mekmanager.toolcontrol.search" contributionURI="bundleclass://mekmanager/mekmanager.controls.tools.SearchToolItem"/>
+      </children>
+    </trimBars>
   </children>
+  <handlers xmi:id="_kRVvUAVcEeamGKXPsQhGug" elementId="mekmanager.handler.saveAll" contributionURI="bundleclass://mekmanager/mekmanager.handlers.SaveAllHandler" command="_5Eu7MAVbEeamGKXPsQhGug"/>
+  <handlers xmi:id="_pP4s8AVcEeamGKXPsQhGug" elementId="mekmanager.handler.exit" contributionURI="bundleclass://mekmanager/mekmanager.handlers.ExitHandler" command="_rDsCUAVbEeamGKXPsQhGug"/>
+  <handlers xmi:id="_t2YW8AVcEeamGKXPsQhGug" elementId="mekmanager.handler.test" contributionURI="bundleclass://mekmanager/mekmanager.handlers.TestHandler" command="_xIQz4AVbEeamGKXPsQhGug"/>
+  <commands xmi:id="_5Eu7MAVbEeamGKXPsQhGug" elementId="org.eclipse.ui.file.saveAll" commandName="Save"/>
+  <commands xmi:id="_rDsCUAVbEeamGKXPsQhGug" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_xIQz4AVbEeamGKXPsQhGug" elementId="mekmanager.command.test" commandName="For testing"/>
   <addons xmi:id="_Tpuw0QSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_Tpuw0gSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_Tpuw0wSAEeaO_uLzYIeDqQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

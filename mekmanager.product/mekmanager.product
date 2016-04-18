@@ -4,6 +4,7 @@
 <product name="MekManager" id="mekmanager.mekmanager" application="org.eclipse.e4.ui.workbench.swt.E4Application" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
+      <win32>/mekmanager.product/config.ini</win32>
    </configIni>
 
    <launcherArgs>
@@ -13,6 +14,13 @@
       </vmArgsMac>
    </launcherArgs>
 
+   <windowImages/>
+
+   <splash
+      location="mekmanager"
+      startupProgressRect="5,275,445,15"
+      startupMessageRect="7,252,445,20"
+      startupForegroundColor="000000" />
    <launcher>
       <solaris/>
       <win useIco="false">
@@ -41,5 +49,12 @@
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
    </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
 
 </product>
