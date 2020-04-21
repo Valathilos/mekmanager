@@ -1,3 +1,3 @@
-# learn-lwjgl
+# mekmanager
 
-Project to learn and experiment with LWJGL and OpenGL concepts
+Project to develop a RCP app to enable mek companies and personnel to be configured and maintained
